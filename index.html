@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        button:hover{
+              background-color: yellow;
+        }
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav" class="h-20 w-full bg-zinc-900 flex flex-row">
+        <div class="text-orange-400 font-mono m-3 "> <h1 class="text-4xl">CoolCulator <i class="fa-solid fa-calculator fa-bounce  style="color: #fb923c;"></i></h1></div>
+    </div>
+    <div id="main" class="flex justify-center items-center " style="height: 750px;">
+        <div id="cal" class=" bg-[#2f2d2e] w-96 shadow-2xl" style="height: 650px;  border-radius: 10px;"> 
+        <div style="height: 50px; background-color: #fce762; margin-top: 25px; width: 250px; margin-left: 65px; border-radius: 5px; text-align: right; font-size: 35px;" class="shadow-inner">0</div>
+        <div style="display: grid;" class="grid-cols-12 grid-rows-5"></div>
+        <div id="row-one" style="color: black; ">
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 50px; margin-left: 50px;">0</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">1</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">2</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">3</button>
+              </div>
+              <div id="row-two" style="color: black;">
+                  <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 50px; margin-left: 50px;">4</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">5</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">6</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">7</button>
+              </div>
+              <div id="row-three">
+                <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 50px; margin-left: 50px;">8</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">9</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">+</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">-</button>
+              </div>
+              <div id="row-four">
+                <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 50px; margin-left: 50px;">*</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">/</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">%</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">.</button>
+              </div>
+              <div id="row-five">
+                <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 50px; margin-left: 50px;">=</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">()</button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;"><i class="fa-solid fa-delete-left" style="color: #000000;"></i></button>
+              <button class="btn bg-[#23b5d3] grid-cols-3" style="width: 60px; height: 30px; border-radius: 10px; margin-top: 30px; margin-left: 10px;">AC</button>
+              </div>
+        </div>
+        
+    </div>
+</body>
+</html>
